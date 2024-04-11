@@ -26,6 +26,7 @@ export default function Intro() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "tween",
+              delay: 0.5,
               duration: 0.2,
             }}
           >
@@ -46,9 +47,9 @@ export default function Intro() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
+              stiffness: 150,
+              delay: 0.55,
+              duration: 0.2,
             }}
           >
             👋
@@ -60,6 +61,12 @@ export default function Intro() {
           className="mb-10 mt-4 px-2 w-7/12 text-center text-xl font-medium !leading-[1.5] sm:text-4xl"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 150,
+            delay: 0.6,
+            duration: 0.1,
+          }}
         >
           <span className="font-bold">Hello, I&apos;m Drew!</span> I&apos;m a{" "}
           Full Stack Developer with 6+ years of experience. I enjoy building
@@ -73,7 +80,10 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.1,
+          type: "spring",
+          stiffness: 150,
+          delay: 0.62,
+          duration: 0.1,
         }}
       >
         <Link
