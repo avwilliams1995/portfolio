@@ -35,7 +35,7 @@ export default function Header() {
                 type: "spring",
                 stiffnes: 150,
                 delay: 0.55,
-                duration: 0.2,
+                duration: 0.3,
               }}
             >
               <Link
@@ -58,8 +58,8 @@ export default function Header() {
                       type: "spring",
                       stiffness: 150,
                       damping: 30,
-                      delay: 0.6,
-                      duration: 0.2,
+                      delay: 0.6
+                      duration: 0.3,
                     }}
                   ></motion.span>
                 )}

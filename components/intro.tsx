@@ -26,7 +26,7 @@ export default function Intro() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "tween",
-              delay: 0.7,
+              delay: 0.5,
               duration: 0.2,
             }}
           >
@@ -47,8 +47,8 @@ export default function Intro() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
-              stiffness: 150,
-              delay: 0.65,
+              stiffness: 100,
+              delay: 0.55,
               duration: 0.1,
             }}
           >
@@ -64,7 +64,7 @@ export default function Intro() {
           transition={{
             type: "spring",
             stiffness: 150,
-            delay: 0.7,
+            delay: 0.6,
             duration: 0.1,
           }}
         >
@@ -82,7 +82,7 @@ export default function Intro() {
         transition={{
           type: "spring",
           stiffness: 150,
-          delay: 0.7,
+          delay: 0.62,
           duration: 0.1,
         }}
       >
