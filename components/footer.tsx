@@ -7,7 +7,7 @@ export default function Footer() {
         &copy; 2024 Andrew Williams. All rights reserved.
       </small>
       <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with
+        <span className="font-semibold">About this website:</span> Built with
         React & Next.js, TypeScript, Tailwind CSS,
         Framer Motion, React Email & Resend, with Vercel hosting.
       </p>
