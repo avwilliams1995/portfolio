@@ -20,7 +20,7 @@ export default function Header() {
           type: "spring",
           stiffnes: 150,
           delay: 0.5,
-          duration: 0.3,
+          duration: 0.4,
         }}
       ></motion.div>
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
@@ -31,6 +31,12 @@ export default function Header() {
               className="h-3/4 flex items-center justify-center relative"
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffnes: 150,
+                delay: 0.55,
+                duration: 0.4,
+              }}
             >
               <Link
                 className={clsx(
@@ -53,7 +59,7 @@ export default function Header() {
                       stiffness: 150,
                       damping: 30,
                       delay: 0.6,
-                      duration: 0.3,
+                      duration: 0.4,
                     }}
                   ></motion.span>
                 )}

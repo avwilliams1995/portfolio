@@ -48,7 +48,7 @@ export default function Intro() {
             transition={{
               type: "spring",
               stiffness: 150,
-              delay: 0.7,
+              delay: 0.65,
               duration: 0.3,
             }}
           >
@@ -61,6 +61,12 @@ export default function Intro() {
           className="mb-10 mt-4 px-2 w-7/12 text-center text-xl font-medium !leading-[1.5] sm:text-4xl"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 150,
+            delay: 0.7,
+            duration: 0.3,
+          }}
         >
           <span className="font-bold">Hello, I&apos;m Drew!</span> I&apos;m a{" "}
           Full Stack Developer with 6+ years of experience. I enjoy building
