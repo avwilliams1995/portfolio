@@ -19,7 +19,7 @@ export default function Header() {
         transition={{
           type: "spring",
           stiffnes: 150,
-          delay: 0.5,
+          delay: 0.6,
           duration: 0.4,
         }}
       ></motion.div>
@@ -50,9 +50,9 @@ export default function Header() {
                     layoutId="activeSection"
                     transition={{
                       type: "spring",
-                      stiffness: 380,
+                      stiffness: 150,
                       damping: 30,
-                      delay: 0.6,
+                      delay: 0.7,
                       duration: 0.4,
                     }}
                   ></motion.span>
