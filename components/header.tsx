@@ -58,7 +58,7 @@ export default function Header() {
                       type: "spring",
                       stiffness: 150,
                       damping: 30,
-                      delay: 0.6,
+                      delay: 0.1,
                       duration: 0.3,
                     }}
                   ></motion.span>
