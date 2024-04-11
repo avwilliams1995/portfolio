@@ -18,7 +18,7 @@ export default function About() {
         transition={{
           type: "spring",
           stiffness: 100,
-          delay: 0.75,
+          delay: 0.68,
           duration: 0.2,
         }}
         id="about"
