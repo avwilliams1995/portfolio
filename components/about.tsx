@@ -19,7 +19,7 @@ export default function About() {
           type: "spring",
           stiffness: 100,
           delay: 0.75,
-          duration: 0.3,
+          duration: 0.2,
         }}
         id="about"
       >
