@@ -47,9 +47,9 @@ export default function Intro() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
-              stiffness: 100,
+              stiffness: 150,
               delay: 0.55,
-              duration: 0.1,
+              duration: 0.2,
             }}
           >
             👋
