@@ -11,7 +11,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useCurrentSectionContext } from "@/context/current-section";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Home", 0.3);
   const { setCurrentSection, setTimeOfLastClick } = useCurrentSectionContext();
   return (
     <section

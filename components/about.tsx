@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About", .5);
+  const { ref } = useSectionInView("About", .3);
 
   return (
     <div className="flex flex-col items-center justify-center">
