@@ -19,8 +19,8 @@ export default function Header() {
         transition={{
           type: "spring",
           stiffnes: 150,
-          delay: 0.6,
-          duration: 0.4,
+          delay: 0.5,
+          duration: 0.3,
         }}
       ></motion.div>
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
@@ -52,8 +52,8 @@ export default function Header() {
                       type: "spring",
                       stiffness: 150,
                       damping: 30,
-                      delay: 0.7,
-                      duration: 0.4,
+                      delay: 0.6,
+                      duration: 0.3,
                     }}
                   ></motion.span>
                 )}

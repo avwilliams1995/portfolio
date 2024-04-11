@@ -26,7 +26,7 @@ export default function Intro() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "tween",
-              delay: .7,
+              delay: 0.7,
               duration: 0.4,
             }}
           >
@@ -49,7 +49,7 @@ export default function Intro() {
               type: "spring",
               stiffness: 150,
               delay: 0.7,
-              duration: 0.4,
+              duration: 0.3,
             }}
           >
             👋
@@ -74,8 +74,10 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.6,
-          duration: 0.4,
+          type: "spring",
+          stiffness: 150,
+          delay: 0.7,
+          duration: 0.3,
         }}
       >
         <Link
