@@ -19,7 +19,7 @@ export default function Header() {
         transition={{
           type: "spring",
           stiffnes: 150,
-          delay: 0.2,
+          delay: 0.5,
           duration: 0.2,
         }}
       ></motion.div>
@@ -52,7 +52,7 @@ export default function Header() {
                       type: "spring",
                       stiffness: 380,
                       damping: 30,
-                      delay: 0.35,
+                      delay: 0.5,
                     }}
                   ></motion.span>
                 )}
