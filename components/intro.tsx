@@ -27,7 +27,7 @@ export default function Intro() {
             transition={{
               type: "tween",
               delay: 0.7,
-              duration: 0.3,
+              duration: 0.2,
             }}
           >
             <Image
@@ -49,7 +49,7 @@ export default function Intro() {
               type: "spring",
               stiffness: 150,
               delay: 0.65,
-              duration: 0.2,
+              duration: 0.1,
             }}
           >
             👋
@@ -65,7 +65,7 @@ export default function Intro() {
             type: "spring",
             stiffness: 150,
             delay: 0.7,
-            duration: 0.2,
+            duration: 0.1,
           }}
         >
           <span className="font-bold">Hello, I&apos;m Drew!</span> I&apos;m a{" "}
@@ -83,7 +83,7 @@ export default function Intro() {
           type: "spring",
           stiffness: 150,
           delay: 0.7,
-          duration: 0.2,
+          duration: 0.1,
         }}
       >
         <Link
