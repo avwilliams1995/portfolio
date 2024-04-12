@@ -6,21 +6,26 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About", .3);
+  const { ref } = useSectionInView("About", 0.5);
+  const fadeInAnimation = {
+    animate: () => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.77,
+      },
+    }),
+  };
 
   return (
     <div className="flex flex-col items-center justify-center">
       <motion.section
         ref={ref}
-        className=" mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-        initial={{ opacity: 0, y: 200 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          type: "spring",
-          stiffness: 100,
-          delay: 0.68,
-          duration: 0.2,
-        }}
+        className="  max-w-[45rem] text-center leading-8  scroll-mt-52 mb-1"
+        initial={{ opacity: 0, y: 100 }}
+        viewport={{ once: true }}
+        variants={fadeInAnimation}
+        whileInView="animate"
         id="about"
       >
         <SectionHeader>About me</SectionHeader>

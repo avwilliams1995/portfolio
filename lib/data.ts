@@ -1,7 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -20,13 +19,13 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Products",
+    hash: "#products",
+  },
+  {
     name: "Skills",
     hash: "#skills",
   },
-  // {
-  //   name: "Products",
-  //   hash: "#products",
-  // },
   {
     name: "Contact",
     hash: "#contact",
@@ -140,3 +139,10 @@ export const skillsData = [
   "Framer Motion",
   "HTML5/CSS",
 ] as const;
+
+export const productSkillsData = {
+  "dashQL": ["React", "Typescript", "Node.js", "GraphQL"],
+  "PressSports": ["React Native", "React", "Node.js", "MongoDB",],
+  "Auda": ["React Native", "Typescript", "Redux","Node.js"],
+
+} as const;
