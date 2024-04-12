@@ -38,7 +38,7 @@ export default function Products() {
     <motion.section
       id="products"
       ref={ref}
-      className="w-[min(100%,100rem)] scroll-mt-40"
+      className="w-[min(100%,100rem)] scroll-mt-44"
       initial={{ opacity: 0, y: 100 }}
       viewport={{ once: true }}
       variants={fadeInAnimation}

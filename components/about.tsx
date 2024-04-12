@@ -6,13 +6,14 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About", 0.5);
+  const { ref } = useSectionInView("About", 0.4);
   const fadeInAnimation = {
     animate: () => ({
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.77,
+        delay: 0.6,
+        duration: 0.3,
       },
     }),
   };
