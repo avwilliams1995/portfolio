@@ -12,7 +12,7 @@ export default function About() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.6,
+        delay: 0.5,
         duration: 0.3,
       },
     }),

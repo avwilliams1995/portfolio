@@ -66,14 +66,14 @@ export default function Products() {
                 alt="Auda Logo"
                 width="100"
                 height="100"
-                className="mb-8"
+                className="mb-5"
               />
               <div className="flex">
                 <Image
                   src="/Auda_Screen.png"
                   alt="Press Sports Screen Female Athlete"
-                  width="205"
-                  height="205"
+                  width="200"
+                  height="200"
                   quality="98"
                   priority={true}
                   className=" object-cover border-[0.15rem] border-white shadow-xl "
