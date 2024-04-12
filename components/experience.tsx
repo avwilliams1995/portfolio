@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience", 0.3);
+  const { ref } = useSectionInView("Experience", 0.2);
 
   const fadeInAnimation = {
     animate: () => ({
