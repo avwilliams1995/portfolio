@@ -32,6 +32,7 @@ export default function Experience() {
       initial={{ opacity: 0, y: 28 }}
       variants={fadeInAnimation}
       whileInView="animate"
+      viewport={{ once: true }}
       id="experience"
     >
       <SectionHeader>My experience</SectionHeader>
