@@ -70,10 +70,10 @@ export default function Products() {
               />
               <div className="flex">
                 <Image
-                  src="/Auda_Screen.png"
-                  alt="Press Sports Screen Female Athlete"
-                  width="200"
-                  height="200"
+                  src="/Auda_Screen1.png"
+                  alt="Auda Screen Athlete"
+                  width="205"
+                  height="205"
                   quality="98"
                   priority={true}
                   className=" object-cover border-[0.15rem] border-white shadow-xl "
