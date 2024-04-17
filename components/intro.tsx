@@ -58,7 +58,7 @@ export default function Intro() {
       </div>
       <div className="flex items-center justify-center">
         <motion.h1
-          className="mb-10 mt-4 px-2 w-7/12 text-center text-xl font-medium !leading-[1.5] sm:text-4xl"
+          className="mb-10 mt-4 px-2 w-7/12 text-center text-l font-medium !leading-[1.5] sm:text-3xl"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -69,7 +69,7 @@ export default function Intro() {
           }}
         >
           <span className="font-bold">Hello, I&apos;m Drew!</span> I&apos;m a{" "}
-          Full Stack Developer with 6+ years of experience. I enjoy building
+          Full Stack Developer with 6y+ of experience, earning Forbes 30u30 and other honors through my career. I enjoy building
           mobile and web apps across the stack, with a focus on React, React
           Native, Node.js, & Python.
         </motion.h1>
