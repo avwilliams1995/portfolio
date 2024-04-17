@@ -38,16 +38,16 @@ export default function Products() {
     <motion.section
       id="products"
       ref={ref}
-      className="flex justify-center w-[min(100%,85rem)] scroll-mt-44"
+      className="scroll-mt-44"
       initial={{ opacity: 0, y: 100 }}
       viewport={{ once: true }}
       variants={fadeInAnimation}
       whileInView="animate"
     >
-      <div className=" !mb-16">
+      <div className=" !mb-16 flex-col ">
         <SectionHeader>Products</SectionHeader>
-        <div className=" flex justify-between items-end mt-8  ">
-        <motion.div
+        <div className="grid xl:grid-cols-3 mt-8 gap-24 self-center">
+          <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -59,7 +59,7 @@ export default function Products() {
             <a
               href="https://github.com/Auda-v1/Auda"
               target="_blank"
-              className="flex flex-col justify-start items-center w-[33rem]"
+              className="flex flex-col justify-start items-center"
             >
               <Image
                 src="/Auda.png"
@@ -79,10 +79,10 @@ export default function Products() {
                   className=" object-cover border-[0.15rem] border-white shadow-xl "
                 />
               </div>
-              <ul className="flex flex-wrap justify-center gap-2 text-md text-gray-800 mt-5 w-[90%]">
+              <ul className="flex flex-wrap justify-center gap-2 text-md text-gray-800 mt-5 w-[95%]">
                 {productSkillsData["Auda"].map((skill, index) => (
                   <motion.li
-                    className="bg-gray-200 borderBlack rounded-xl px-4 py-2  "
+                    className="bg-gray-200 borderBlack rounded-xl px-3 py-2  "
                     key={index}
                     variants={fadeInAnimationVariants}
                     initial="initial"
@@ -110,7 +110,7 @@ export default function Products() {
             <a
               href="https://presssportsapp.com/"
               target="_blank"
-              className=" flex flex-col justify-center items-center w-[33rem]"
+              className=" flex flex-col justify-center items-center "
             >
               <Image
                 src="/Press_Sports.png"
@@ -139,7 +139,7 @@ export default function Products() {
                   className=" object-cover border-[0.15rem] border-white shadow-xl "
                 />
               </div>
-              <ul className="flex flex-wrap justify-center gap-2 text-md text-gray-800 mt-5 w-[90%]">
+              <ul className="flex flex-wrap justify-center gap-2 text-md text-gray-800 mt-5 w-[95%]">
                 {productSkillsData["PressSports"].map((skill, index) => (
                   <motion.li
                     className="bg-gray-200 borderBlack rounded-xl px-4 py-2  "
@@ -158,7 +158,7 @@ export default function Products() {
               </ul>
             </a>
           </motion.div>
-        
+
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -171,7 +171,7 @@ export default function Products() {
             <a
               href="https://dash-ql.vercel.app/demo"
               target="_blank"
-              className="flex flex-col justify-center items-center w-[33rem]"
+              className="flex flex-col justify-center items-center "
             >
               <Image
                 src="/dashQL.png"
@@ -191,7 +191,7 @@ export default function Products() {
                   className="mb-20 mt-10"
                 />
               </div>
-              <ul className="flex flex-wrap justify-center gap-2 text-md text-gray-800 mt-5 w-[90%]">
+              <ul className="flex flex-wrap justify-center gap-2 text-md text-gray-800 mt-9 w-[95%]">
                 {productSkillsData["dashQL"].map((skill, index) => (
                   <motion.li
                     className="bg-gray-200 borderBlack rounded-xl px-4 py-2  "

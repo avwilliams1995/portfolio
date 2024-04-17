@@ -143,8 +143,8 @@ export const skillsData = [
 ] as const;
 
 export const productSkillsData = {
-  "dashQL": ["React", "Typescript", "Node.js", "GraphQL"],
-  "PressSports": ["React Native", "React", "Node.js", "MongoDB",],
-  "Auda": ["React Native", "Typescript", "Redux","Node.js"],
+  "dashQL": ["React", "Typescript", "Node", "GraphQL"],
+  "PressSports": ["React Native", "React", "Node", "MongoDB",],
+  "Auda": ["React Native", "Typescript", "Redux","Node"],
 
 } as const;
