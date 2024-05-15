@@ -70,9 +70,9 @@ export default function Products() {
               />
               <div className="flex">
                 <Image
-                  src="/Auda_Screen1.png"
+                  src="/Auda_Recording_.gif"
                   alt="Auda Screen Athlete"
-                  width="205"
+                  width="210"
                   height="205"
                   quality="98"
                   priority={true}

@@ -143,6 +143,6 @@ export const skillsData = [
 export const productSkillsData = {
   "dashQL": ["React", "Typescript", "Node.js", "GraphQL"],
   "PressSports": ["React Native", "React", "Node.js", "MongoDB",],
-  "Auda": ["React Native", "Typescript", "Redux","Node.js"],
+  "Auda": ["React Native", "Typescript","Node.js", "Firebase"],
 
 } as const;
