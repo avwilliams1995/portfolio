@@ -34,15 +34,17 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Press Sports (iOS & Android)",
+    title: "Press Sports",
     location: "Co-Founder, CMO & Head of Data Analytics",
     description: "Awards: Forbes 30 under 30, Atlanta Inno: 25 under 25.",
     tasks: [
       "Created our interactive website with React while implementing SEO best practices, allowing for state management and overall structure to display user data (videos, profiles, etc.), using reusable components to selectively manipulate the DOM.",
-      "Utilized Python and Selenium for web-scraping to extract useful data and information that may be otherwise unavailable.",
       "Oversaw a team of 10+ employees, acquiring 300,000+ users with a 4.9 star overall rating (11.8k ratings).",
-      "Worked with the team on making product decisions/strategy through UI/UX design and A/B testing.",
-      "Employed/worked with engineering team in developing our React Native mobile app.",
+      "Employed and worked with engineering team in developing our React Native mobile app.",
+      "Collaborated with the team on making product decisions/strategy through UI/UX design and A/B testing.",
+      "Utilized SQL and Big Query to analyze and secure our thousands of users’ data.",
+      "Expanded our DB to utilize MongoDB to ensure flexibility and scalability and handle schema less data of the users.",
+      "Utilized Python and Selenium for web-scraping to extract useful data and information that may be otherwise unavailable.",
       "Leveraged Python and Firebase to compile weekly and monthly analytics reports to our team and investors.",
     ],
     icon: React.createElement(CgWorkAlt),
