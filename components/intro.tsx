@@ -100,7 +100,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 active:scale-105 transition cursor-pointer border border-black/10 "
-          href="/Andrew_Williams_Resume.pdf"
+          href="/Andrew-Williams-Resume.pdf"
           download
         >
           Download Resume{" "}
