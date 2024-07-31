@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Portfolio Project
 
-First, run the development server:
+## Overview
 
-```bash
+This repository contains the source code for a personal portfolio website built using **Next.js**, **React**, **TypeScript**, and **Tailwind CSS**. The portfolio showcases various projects, skills, and experiences of the developer, Andrew Williams, and serves as a professional online presence.
+
+## Features
+
+- **Responsive Design**: The portfolio is fully responsive, ensuring an optimal viewing experience on devices of all sizes.
+- **Next.js Framework**: Leveraging Next.js for its server-side rendering and static site generation capabilities, providing fast load times and SEO benefits.
+- **TypeScript**: Ensures type safety and improves the developer experience through enhanced code quality and better tooling.
+- **Tailwind CSS**: Utilized for utility-first CSS styling, enabling rapid UI development with a highly customizable design.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/avwilliams1995/portfolio.git
+   cd portfolio
+
+2.	**Install dependencies:
+Make sure you have Node.js installed. Then run:
+
+npm install
+
+3.	**Run the development server:
+Start the local development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This portfolio is designed to highlight personal projects, skills, and experiences. Each section of the portfolio can be easily customized by modifying the content in the corresponding components.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+Contact
 
-To learn more about Next.js, take a look at the following resources:
+For any questions or inquiries, feel free to reach out:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+	•	Website: andrew-williams-site.vercel.app
+	•	LinkedIn: https://www.linkedin.com/in/andrew-vaughan-williams/ 
+	•	GitHub: avwilliams1995
+ 
