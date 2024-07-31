@@ -15,10 +15,6 @@ This repository contains the source code for a personal portfolio website built 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Installation
@@ -46,7 +42,7 @@ Usage
 This portfolio is designed to highlight personal projects, skills, and experiences. Each section of the portfolio can be easily customized by modifying the content in the corresponding components.
 
 
-Contact
+## Contact
 
 For any questions or inquiries, feel free to reach out:
 
