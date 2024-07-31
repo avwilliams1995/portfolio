@@ -11,6 +11,7 @@ This repository contains the source code for a personal portfolio website built 
 - **Next.js Framework**: Leveraging Next.js for its server-side rendering and static site generation capabilities, providing fast load times and SEO benefits.
 - **TypeScript**: Ensures type safety and improves the developer experience through enhanced code quality and better tooling.
 - **Tailwind CSS**: Utilized for utility-first CSS styling, enabling rapid UI development with a highly customizable design.
+- **Framer Motion**: Integrated for smooth and customizable animations, enhancing the user experience with fluid transitions and interactive elements.
 
 ## Table of Contents
 
