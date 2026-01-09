@@ -1,9 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import audiaLogo from "@/public/audia_logo.jpg";
+import Image from "next/image";
 
 export const links = [
   {
@@ -34,52 +35,61 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Press Sports",
-    location: "Co-Founder, CMO & Head of Data Analytics",
-    description: "Awards: Forbes 30 under 30, Atlanta Inno: 25 under 25.",
+    title: "Hurdlr",
+    location: "Forward Deployed / Solutions Engineer",
+    description: "Accounting Software (Embedded UI & API)",
     tasks: [
-      "Created our interactive website with React while implementing SEO best practices, allowing for state management and overall structure to display user data (videos, profiles, etc.), using reusable components to selectively manipulate the DOM.",
-      "Oversaw a team of 10+ employees, acquiring 300,000+ users with a 4.9 star overall rating (11.8k ratings).",
-      "Employed and worked with engineering team in developing our React Native mobile app.",
-      "Collaborated with the team on making product decisions/strategy through UI/UX design and A/B testing.",
-      "Utilized SQL and Big Query to analyze and secure our thousands of users’ data.",
-      "Expanded our DB to utilize MongoDB to ensure flexibility and scalability and handle schema less data of the users.",
-      "Utilized Python and Selenium for web-scraping to extract useful data and information that may be otherwise unavailable.",
-      "Leveraged Python and Firebase to compile weekly and monthly analytics reports to our team and investors.",
+      "Joined as the first Solutions Engineer, brought on to enhance and stabilize the company's V5 RESTful API while collaborating with the core engineering team on the next-generation V6 web architecture.",
+      "Shipped 40+ PRs directly and contributed to 60+ end-to-end feature deliveries across React, Java, Jest, Cypress, and MySQL, resolving production bugs and improving platform stability.",
+      "Resolved 150+ tracked engineering issues (85% completion rate), performing root-cause analysis and problem-solving across frontend, backend, and API layers.",
+      "Established the Solutions Engineering function, creating internal documentation and onboarding processes, serving as primary technical liaison for 10 enterprise partners, leading 120+ technical syncs.",
+      "Integrated and maintained third-party financial APIs including Stripe SDK and Plaid Link, collaborating with partner engineering teams on secure authentication, webhook reliability, and data synchronization.",
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "2017 - 2022",
+    date: "Oct 2024 - Dec 2025",
+  },
+  {
+    title: "Audia (iOS & Android)",
+    location: "Full Stack Software Engineer",
+    description: "Music Based Social Network",
+    tasks: [
+      "Built 0-to-1: Led full-stack development of a cross-platform web and mobile application from concept to App Store, using React Native, TypeScript, JavaScript, Expo Router, and a Node.js/Express backend.",
+      "Engineered real-time audio playback system with viewport-aware focus detection, managing single-instance Sound objects and automatic cleanup on navigation to prevent memory leaks.",
+      "Designed and implemented a Node.js/Express backend handling Spotify API integration, with JWT authentication middleware, token management, and secure client-credential flows.",
+      "Architected Firestore data model supporting posts, nested comments with @mentions, threaded replies, reposts with snapshot persistence, and user-curated collections.",
+      "Performed optimistic UI updates with automatic rollback on failure for likes, follows, and reposts, improving perceived performance while maintaining data consistency.",
+      "Implemented Redux for global state management, then migrated to Zustand after hitting scaling pain points, reducing boilerplate ~40% across 20+ screens.",
+    ],
+    icon: React.createElement(Image, { src: audiaLogo, alt: "Audia", width: 40, height: 40, className: "rounded-full" }),
+    date: "Jul 2023 - Oct 2024",
   },
   {
     title: "dashQL with OS Labs",
     location: "Full Stack Software Engineer",
-    description: "dashQL is a GraphQL Caching Solution.",
+    description: "Open Source GraphQL Caching Solution",
     tasks: [
-      "Built the website on React with Typescript for state management and overall structure to display our demo dashboard, using reusable components to selectively manipulate the DOM by using the virtual DOM to increase render performance.",
-      "Made use of React Hooks to outsource complex functionality and simplify the codebase, creating reusable functions that provide pure and more maintainable code to ensure future compatibility.",
-      "Leveraged Node.js/Express server to efficiently handle HTTP requests to a single GraphQL endpoint, enhancing code readability with easy debugging, utilizing its middleware pattern to track performance statistics to respond back to client.",
-      "Utilized GraphQL’s abstract syntax trees to deconstruct and cache GraphQL queries, enabling a deep and complete cache system, increasing the chance that a given query will trigger a cache hit, improving the efficiency of the server.",
-      "Employed a GraphQL server to eliminate N+1 queries and aggregate multiple API requests from the client into a single query to fetch specific data according to the relationships defined in the GraphQL schemas.",
-      "Tested with Jest to enhance code quality and proactively detect issues with caching and the demo dashboard.",
+      "Led frontend development of an interactive web application dashboard using React, TypeScript, JavaScript, Chart.js and Vite, enabling developers to visualize caching performance in real-time.",
+      "Built dynamic query builder UI with checkbox-driven field selection that generates GraphQL queries on the fly, supporting nested queries and 150+ query combinations.",
+      "Implemented 4 Chart.js visualizations (line, bar, pie, result card) displaying response times, cache hit/miss rates, and field-level metrics, demonstrating up to 90% performance improvement.",
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - 2024",
+    date: "Feb 2023 - Jun 2023",
   },
   {
-    title: "Auda (iOS & Android)",
-    location: "Full Stack Software Engineer",
-    description: "Auda is a Music Based Social Network.",
+    title: "Press Sports",
+    location: "Co-Founder & Head of Data Analytics",
+    description: "Sports Social Network. Awards: Forbes 30 under 30, Atlanta Inno: 25 under 25.",
     tasks: [
-      "Leveraging React Native with TypeScript and Expo Router to develop a native mobile application from scratch for both iOS and Android which allows users to share and discover new music with friends, find communities, and grow businesses.",
-      "Implemented a Node.js/Express server to efficiently handle HTTP requests to the Spotify API, enhancing code readability while utilizing its middleware pattern to parse and send back the correct response to the client. ",
-      "Spearheading the seamless integration of multiple APIs to elevate user experience and functionality within Auda's platform.",
-      "Utilizing Google Cloud storage to engineer a scalable data system, achieving a 50% reduction in data retrieval time, and ensuring control and security over user info while maximizing horizontal and vertical scalability to facilitate optimal growth.",
-      "Applied Redux for global state management, allowing for easy use and maintainability of data throughout the app.",
-      "Created a Figma vision board to maintain a high standard for UI/UX decisions and system design flow across the app.",
-      "Following test-driven-development practices to ensure full security throughout the app and minimize technical debt.",
+      "Hired and managed team of 15+ employees, driving user growth to 350,000+ users with a 4.9-star app store rating on 11,800 reviews.",
+      "Directed product strategy and project management, leveraging expertise in UI/UX, web design, and A/B testing that led to over 60% Day 1, 55% Week 1, and 25% Day 30 retention.",
+      "Developed an interactive web application with React and JavaScript, integrating SEO best practices and reusable front-end components with state management.",
+      "Collaborated with a team of 7+ engineers to develop React Native app, contributing to product specs and full stack development.",
+      "Initiated BigQuery for early-stage analytics and user data management across thousands of users.",
+      "Expanded backend database infrastructure to incorporate MongoDB/Firestore for flexible schema-less data storage.",
+      "Built a Python web scraping pipeline using Selenium to extract data on 10,000+ committed athletes.",
     ],
-    icon: React.createElement(FaReact),
-    date: "2024 - present",
+    icon: React.createElement(CgWorkAlt),
+    date: "Nov 2017 - Jan 2023",
   },
 ] as const;
 
@@ -113,6 +123,7 @@ export const skillsData = [
   "React",
   "React Native",
   "Python",
+  "Java",
   "Next.js",
   "Express",
   "Node.js",
@@ -120,6 +131,7 @@ export const skillsData = [
   "Git/GitHub",
   "CI/CD",
   "Redux",
+  "Zustand",
   "JWT",
   "OAuth",
   "AWS",
@@ -128,6 +140,7 @@ export const skillsData = [
   "Firebase",
   "MongoDB",
   "SQL",
+  "MySQL",
   "PostgreSQL",
   "Redis",
   "Jest",
@@ -135,16 +148,20 @@ export const skillsData = [
   "Cypress",
   "Vite",
   "Expo Router",
+  "Stripe",
+  "Plaid",
   "Bootstrap",
   "MUI",
   "Tailwind",
   "Framer Motion",
   "HTML5/CSS",
+  "Figma",
+  "Claude",
 ] as const;
 
 export const productSkillsData = {
-  "dashQL": ["React", "Typescript", "Node.js", "GraphQL"],
-  "PressSports": ["React Native", "React", "Node.js", "MongoDB",],
-  "Auda": ["React Native", "Typescript","Node.js", "Firebase"],
-
+  Hurdlr: ["React", "Java", "Jest", "Cypress", "MySQL"],
+  Auda: ["React Native", "Typescript", "Node.js", "Firebase"],
+  dashQL: ["React", "Typescript", "Node.js", "GraphQL"],
+  PressSports: ["React Native", "React", "Node.js", "MongoDB"],
 } as const;

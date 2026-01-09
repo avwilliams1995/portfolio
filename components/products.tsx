@@ -57,13 +57,13 @@ export default function Products() {
             }}
           >
             <a
-              href="https://github.com/Auda-v1/Auda"
+              href="https://apps.apple.com/us/app/audia-mobile/id6748881891"
               target="_blank"
               className="flex flex-col justify-start items-center"
             >
               <Image
-                src="/Auda.png"
-                alt="Auda Logo"
+                src="/audia_logo.jpg"
+                alt="Audia Logo"
                 width="100"
                 height="100"
                 className="mb-5"
