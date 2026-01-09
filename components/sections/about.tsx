@@ -38,6 +38,7 @@ export default function About() {
           stack engineer across web and mobile, contributing to production
           systems and real-world features used by thousands of users.
         </p>
+        <div className="h-2"></div>
         <p className="mb-3">
           My core experience includes{" "}
           <span className="font-medium">
@@ -50,7 +51,7 @@ export default function About() {
           to sharpen my skills and learn new technologies when they meaningfully
           improve the product.
         </p>
-        <div className="h-4"></div>
+        <div className="h-2"></div>
         <p>
           When I'm not coding, I enjoy attending sports events to watch my team
           probably break my heart, listening/jamming out to music, playing

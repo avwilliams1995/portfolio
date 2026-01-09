@@ -2,7 +2,13 @@
 
 import React from "react";
 import { Resend } from "resend";
-import { validateString, getErrorMessage } from "@/lib/funcs";
+import {
+  validateString,
+  validateEmail,
+  isBlockedEmail,
+  containsSpam,
+  getErrorMessage,
+} from "@/lib/funcs";
 import ContactFormEmail from "./contactFormEmail";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -11,14 +17,27 @@ export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
 
-  if (!validateString(senderEmail, 500)) {
+  if (!validateEmail(senderEmail)) {
     return {
-      error: "Invalid sender email",
+      error: "Please provide a valid email address",
     };
   }
+
+  if (isBlockedEmail(senderEmail)) {
+    return {
+      error: "You cannot send a message from this email address",
+    };
+  }
+
   if (!validateString(message, 5000)) {
     return {
-      error: "Invalid message",
+      error: "Message must be between 1 and 5000 characters",
+    };
+  }
+
+  if (containsSpam(message)) {
+    return {
+      error: "Your message appears to contain spam or inappropriate content",
     };
   }
 
