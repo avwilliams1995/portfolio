@@ -68,10 +68,11 @@ export default function Intro() {
             duration: 0.1,
           }}
         >
-          <span className="font-bold">Hey, I&apos;m Drew.</span> I&apos;m a Full
-          Stack Developer with 4y+ of experience, earning Forbes 30 Under 30 and other
-          honors through my career. I enjoy building mobile and web apps across
-          the stack, with a focus on React, React Native, Node.js, & Python.
+          <span className="font-bold">Hey, I&apos;m Drew, </span> a
+          product-driven Full Stack Engineer who’s shipped and scaled consumer
+          web and mobile products, including a mobile app that reached 350k+
+          users. I specialize in TypeScript, React, React Native, Node.js, and
+          Python.
         </motion.h1>
       </div>
 
@@ -99,7 +100,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 active:scale-105 transition cursor-pointer border border-black/10 "
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 active:scale-105 transition cursor-pointer border border-black/10"
           href="/Andrew-Williams-Resume.pdf"
           download
         >
@@ -108,17 +109,19 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full  hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10 "
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10"
           href="https://www.linkedin.com/in/andrew-vaughan-williams/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <BsLinkedin />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full  hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 "
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
           href="https://github.com/avwilliams1995"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FaGithubSquare />
         </a>

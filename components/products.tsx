@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { useCurrentSectionContext } from "@/context/current-section";
 import SectionHeader from "./section-header";
+import ProductCard from "./product-card";
 import { productSkillsData } from "@/lib/data";
 
 export default function Products() {
@@ -20,6 +19,7 @@ export default function Products() {
       },
     }),
   };
+
   const fadeInAnimationVariants = {
     initial: {
       opacity: 0,
@@ -44,172 +44,72 @@ export default function Products() {
       variants={fadeInAnimation}
       whileInView="animate"
     >
-      <div className=" !mb-16 flex-col ">
+      <div className="!mb-16 flex-col">
         <SectionHeader>Products</SectionHeader>
         <div className="grid xl:grid-cols-3 mt-8 gap-24 self-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              delay: 0.5,
-              duration: 0.3,
-            }}
-          >
-            <a
-              href="https://apps.apple.com/us/app/audia-mobile/id6748881891"
-              target="_blank"
-              className="flex flex-col justify-start items-center"
-            >
-              <Image
-                src="/audia_logo.jpg"
-                alt="Audia Logo"
-                width="100"
-                height="100"
-                className="mb-5"
-              />
-              <div className="flex">
-                <Image
-                  src="/Auda_recording_.gif"
-                  alt="Auda Screen Recording"
-                  width="210"
-                  height="205"
-                  quality="98"
-                  priority={true}
-                  className=" object-cover border-[0.15rem] border-white shadow-xl "
-                />
-              </div>
-              <ul className="flex flex-wrap justify-center gap-2 text-md text-gray-800 mt-5 w-[95%]">
-                {productSkillsData["Audia"].map((skill, index) => (
-                  <motion.li
-                    className="bg-gray-200 borderBlack rounded-xl px-3 py-2  "
-                    key={index}
-                    variants={fadeInAnimationVariants}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    custom={index}
-                  >
-                    {skill}
-                  </motion.li>
-                ))}
-              </ul>
-            </a>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              delay: 0.5,
-              duration: 0.2,
-            }}
-          >
-            <a
-              href="https://presssportsapp.com/"
-              target="_blank"
-              className=" flex flex-col justify-center items-center "
-            >
-              <Image
-                src="/Press_Sports.png"
-                alt="Press Sports Logo"
-                width="170"
-                height="170"
-                className="mb-12"
-              />
-              <div className="flex">
-                <Image
-                  src="/ps1.png"
-                  alt="Press Sports Screen Female Athlete"
-                  width="200"
-                  height="200"
-                  quality="98"
-                  priority={true}
-                  className=" object-cover border-[0.15rem] border-white shadow-xl "
-                />
-                <Image
-                  src="/ps2.png"
-                  alt="Press Sports Screen Male Athlete"
-                  width="200"
-                  height="200"
-                  quality="98"
-                  priority={true}
-                  className=" object-cover border-[0.15rem] border-white shadow-xl "
-                />
-              </div>
-              <ul className="flex flex-wrap justify-center gap-2 text-md text-gray-800 mt-5 w-[95%]">
-                {productSkillsData["PressSports"].map((skill, index) => (
-                  <motion.li
-                    className="bg-gray-200 borderBlack rounded-xl px-4 py-2  "
-                    key={index}
-                    variants={fadeInAnimationVariants}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    custom={index}
-                  >
-                    {skill}
-                  </motion.li>
-                ))}
-              </ul>
-            </a>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              delay: 0.5,
-              duration: 0.2,
-            }}
-          >
-            <a
-              href="https://dash-ql.vercel.app/demo"
-              target="_blank"
-              className="flex flex-col justify-center items-center "
-            >
-              <Image
-                src="/dashQL.png"
-                alt="dashQL Logo"
-                width="140"
-                height="140"
-                className="!mb-20"
-              />
-              <div className="flex">
-                <Image
-                  src="/dashQL_demo.gif"
-                  alt="dashQL Demo"
-                  width="440"
-                  height="440"
-                  quality="98"
-                  priority={true}
-                  className="mb-20 mt-10"
-                />
-              </div>
-              <ul className="flex flex-wrap justify-center gap-2 text-md text-gray-800 mt-9 w-[95%]">
-                {productSkillsData["dashQL"].map((skill, index) => (
-                  <motion.li
-                    className="bg-gray-200 borderBlack rounded-xl px-4 py-2  "
-                    key={index}
-                    variants={fadeInAnimationVariants}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    custom={index}
-                  >
-                    {skill}
-                  </motion.li>
-                ))}
-              </ul>
-            </a>
-          </motion.div>
+          <ProductCard
+            href="https://apps.apple.com/us/app/audia-mobile/id6748881891"
+            logoSrc="/audia_logo.jpg"
+            logoAlt="Audia Logo"
+            logoWidth={100}
+            logoHeight={100}
+            logoClassName="mb-5"
+            images={[
+              {
+                src: "/Auda_recording_.gif",
+                alt: "Auda Screen Recording",
+                width: 210,
+                height: 205,
+              },
+            ]}
+            imageClassName="object-cover border-[0.15rem] border-white shadow-xl"
+            skills={productSkillsData["Audia"]}
+            fadeInAnimationVariants={fadeInAnimationVariants}
+          />
+          <ProductCard
+            href="https://presssportsapp.com/"
+            logoSrc="/Press_Sports.png"
+            logoAlt="Press Sports Logo"
+            logoWidth={170}
+            logoHeight={170}
+            logoClassName="mb-12"
+            images={[
+              {
+                src: "/ps1.png",
+                alt: "Press Sports Screen Female Athlete",
+                width: 200,
+                height: 200,
+              },
+              {
+                src: "/ps2.png",
+                alt: "Press Sports Screen Male Athlete",
+                width: 200,
+                height: 200,
+              },
+            ]}
+            imageClassName="object-cover border-[0.15rem] border-white shadow-xl"
+            skills={productSkillsData["PressSports"]}
+            fadeInAnimationVariants={fadeInAnimationVariants}
+          />
+          <ProductCard
+            href="https://dash-ql.vercel.app/demo"
+            logoSrc="/dashQL.png"
+            logoAlt="dashQL Logo"
+            logoWidth={140}
+            logoHeight={140}
+            logoClassName="!mb-20"
+            images={[
+              {
+                src: "/dashQL_demo.gif",
+                alt: "dashQL Demo",
+                width: 440,
+                height: 440,
+              },
+            ]}
+            imageClassName="mb-20 mt-10"
+            skills={productSkillsData["dashQL"]}
+            fadeInAnimationVariants={fadeInAnimationVariants}
+          />
         </div>
       </div>
     </motion.section>
