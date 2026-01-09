@@ -68,10 +68,10 @@ export default function Intro() {
             duration: 0.1,
           }}
         >
-          <span className="font-bold">Hey, I&apos;m Drew.</span> I&apos;m a{" "}
-          Full Stack Developer with 6y+ of experience, earning Forbes 30u30 and other honors through my career. I enjoy building
-          mobile and web apps across the stack, with a focus on React, React
-          Native, Node.js, & Python.
+          <span className="font-bold">Hey, I&apos;m Drew.</span> I&apos;m a Full
+          Stack Developer with 4y+ of experience, earning Forbes 30u30 and other
+          honors through my career. I enjoy building mobile and web apps across
+          the stack, with a focus on React, React Native, Node.js, & Python.
         </motion.h1>
       </div>
 

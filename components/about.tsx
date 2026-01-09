@@ -31,25 +31,23 @@ export default function About() {
       >
         <SectionHeader>About me</SectionHeader>
         <p className="mb-3">
-          After 5+ years of running a mobile consumer tech business where our{" "}
-          React Native mobile app amassed 300k+ users, I decided to double down
+          After 4+ years of running a mobile consumer tech business where our{" "}
+          React Native mobile app amassed 350k+ users, I decided to double down
           on my SWE skills to progress as a full stack dev and continue to
           pursue my passion in developing products. I have honed my skills with{" "}
           <br></br>
           <span className="font-medium">
-            6y+ JavaScript, TypeScript, 5y+ React, 3y+ React Native, 3y+
-            Node.js, and 3y+ Python.
+            4y+ JavaScript/TypeScript, 4y+ React, 3y+ React Native, 3y+ Node.js,
+            and 2y+ Python.
           </span>
           <br></br>
           My favorite part of programming is the problem-solving aspect, as well
           as being able to collaborate with a team in developing out a product
           that users will love. My core tech stack is{" "}
           <span className="font-medium">
-            React, React Native, Python, Next.js, Node.js, MongoDB and SQL,{" "}
+            React, React Native, Python, Next.js, Node.js, Firebase and MySQL,{" "}
           </span>
-          and am always looking to learn new technologies. I am currently
-          looking for a <span className="font-medium">full-time position</span>{" "}
-          as a software developer.
+          and am always looking to learn new technologies.
         </p>
         <div className="h-4"></div>
         <p>
@@ -57,7 +55,7 @@ export default function About() {
           team probably break my heart, listening/jamming out to music, playing
           piano, playing golf to hopefully break 90 (doubtful), boxing, fitness,
           tennis with friends, intramural softball, reading books, and coaching
-          baseball while being yelled at by 12 year old kids!
+          baseball while being yelled at by 12 year old kids' parents.
         </p>
       </motion.section>
     </div>
