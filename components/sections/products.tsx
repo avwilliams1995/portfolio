@@ -43,9 +43,10 @@ export default function Products() {
       viewport={{ once: true }}
       variants={fadeInAnimation}
       whileInView="animate"
+      aria-labelledby="products-heading"
     >
       <div className="!mb-16 flex-col">
-        <SectionHeader>Products</SectionHeader>
+        <SectionHeader id="products-heading">Products</SectionHeader>
         <div className="grid xl:grid-cols-3 mt-8 gap-24 self-center">
           <ProductCard
             href="https://apps.apple.com/us/app/audia-mobile/id6748881891"
@@ -57,7 +58,7 @@ export default function Products() {
             images={[
               {
                 src: "/Auda_recording_.gif",
-                alt: "Auda Screen Recording",
+                alt: "Audia app demo showing music sharing features",
                 width: 210,
                 height: 205,
               },
@@ -65,6 +66,7 @@ export default function Products() {
             imageClassName="object-cover border-[0.15rem] border-white shadow-xl"
             skills={productSkillsData["Audia"]}
             fadeInAnimationVariants={fadeInAnimationVariants}
+            ariaLabel="View Audia music social network on the App Store"
           />
           <ProductCard
             href="https://presssportsapp.com/"
@@ -76,13 +78,13 @@ export default function Products() {
             images={[
               {
                 src: "/ps1.png",
-                alt: "Press Sports Screen Female Athlete",
+                alt: "Press Sports app screenshot showing female athlete profile",
                 width: 200,
                 height: 200,
               },
               {
                 src: "/ps2.png",
-                alt: "Press Sports Screen Male Athlete",
+                alt: "Press Sports app screenshot showing male athlete profile",
                 width: 200,
                 height: 200,
               },
@@ -90,6 +92,7 @@ export default function Products() {
             imageClassName="object-cover border-[0.15rem] border-white shadow-xl"
             skills={productSkillsData["PressSports"]}
             fadeInAnimationVariants={fadeInAnimationVariants}
+            ariaLabel="Visit Press Sports website - sports social network with 350k+ users"
           />
           <ProductCard
             href="https://dash-ql.vercel.app/demo"
@@ -101,7 +104,7 @@ export default function Products() {
             images={[
               {
                 src: "/dashQL_demo.gif",
-                alt: "dashQL Demo",
+                alt: "dashQL demo showing GraphQL caching performance visualization",
                 width: 440,
                 height: 440,
               },
@@ -109,6 +112,7 @@ export default function Products() {
             imageClassName="mb-20 mt-10"
             skills={productSkillsData["dashQL"]}
             fadeInAnimationVariants={fadeInAnimationVariants}
+            ariaLabel="View dashQL demo - open source GraphQL caching solution"
           />
         </div>
       </div>

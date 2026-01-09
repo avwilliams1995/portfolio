@@ -27,6 +27,7 @@ interface ProductCardProps {
       transition: { delay: number };
     };
   };
+  ariaLabel?: string;
 }
 
 export default function ProductCard({
@@ -40,6 +41,7 @@ export default function ProductCard({
   imageClassName,
   skills,
   fadeInAnimationVariants,
+  ariaLabel,
 }: ProductCardProps) {
   return (
     <motion.div
@@ -56,6 +58,7 @@ export default function ProductCard({
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-col justify-start items-center"
+        aria-label={ariaLabel}
       >
         <Image
           src={logoSrc}

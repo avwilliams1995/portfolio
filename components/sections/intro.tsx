@@ -103,9 +103,10 @@ export default function Intro() {
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 active:scale-105 transition cursor-pointer border border-black/10"
           href="/Andrew-Williams-Resume.pdf"
           download
+          aria-label="Download Andrew Williams' resume as PDF"
         >
           Download Resume{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" aria-hidden="true" />
         </a>
 
         <a
@@ -113,8 +114,9 @@ export default function Intro() {
           href="https://www.linkedin.com/in/andrew-vaughan-williams/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Andrew Williams' LinkedIn profile"
         >
-          <BsLinkedin />
+          <BsLinkedin aria-hidden="true" />
         </a>
 
         <a
@@ -122,8 +124,9 @@ export default function Intro() {
           href="https://github.com/avwilliams1995"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Andrew Williams' GitHub profile"
         >
-          <FaGithubSquare />
+          <FaGithubSquare aria-hidden="true" />
         </a>
       </motion.div>
     </section>

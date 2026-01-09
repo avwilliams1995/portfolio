@@ -42,12 +42,17 @@ export default function Contact() {
       viewport={{
         once: true,
       }}
+      aria-labelledby="contact-heading"
     >
-      <SectionHeader>Contact me</SectionHeader>
+      <SectionHeader id="contact-heading">Contact me</SectionHeader>
 
       <p className="text-gray-700 -mt-6 ">
         Feel free to contact me directly at{" "}
-        <a className="underline" href="mailto:avwilliams1995@gmail.com">
+        <a
+          className="underline"
+          href="mailto:avwilliams1995@gmail.com"
+          aria-label="Email Andrew Williams at avwilliams1995@gmail.com"
+        >
           avwilliams1995@gmail.com
         </a>{" "}
         or through this form.
@@ -67,6 +72,7 @@ export default function Contact() {
           toast.success("Email sent successfully!");
           formRef.current?.reset();
         }}
+        aria-label="Contact form"
       >
         <input
           ref={emailInputRef}
@@ -76,6 +82,7 @@ export default function Contact() {
           required
           maxLength={50}
           placeholder="Your email"
+          aria-label="Your email address"
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
@@ -83,6 +90,7 @@ export default function Contact() {
           placeholder="Your message"
           required
           maxLength={5000}
+          aria-label="Your message"
         />
         <SubmitBtn />
       </form>
