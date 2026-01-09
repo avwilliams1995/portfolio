@@ -68,7 +68,7 @@ export default function Intro() {
             duration: 0.1,
           }}
         >
-          <span className="font-bold">Hey, I&apos;m Drew, </span> a
+          <span className="font-bold">Hey, I&apos;m Drew! </span> I&apos;m a
           product-driven Full Stack Engineer who’s shipped and scaled consumer
           web and mobile products, including a mobile app that reached 350k+
           users. I specialize in TypeScript, React, React Native, Node.js, and
