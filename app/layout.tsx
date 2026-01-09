@@ -1,11 +1,11 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Header from "@/components/header";
+import Header from "@/components/layout/header";
 import CurrentSectionContextProvider from "@/context/current-section";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
-import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
+import Footer from "@/components/layout/footer";
+import ThemeSwitch from "@/components/ui/theme-switch";
 
 const inter = Inter({ subsets: ["latin"] });
 

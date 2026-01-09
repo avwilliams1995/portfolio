@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Intro from "@/components/intro";
-import Divider from "@/components/divider";
-import About from "@/components/about";
-import Experience from "@/components/experience";
-import Skills from "@/components/skills";
-import Contact from "@/components/contact";
-import Products from "@/components/products";
+import Intro from "@/components/sections/intro";
+import Divider from "@/components/ui/divider";
+import About from "@/components/sections/about";
+import Experience from "@/components/sections/experience";
+import Skills from "@/components/sections/skills";
+import Contact from "@/components/sections/contact";
+import Products from "@/components/sections/products";
 
 export default function Home() {
   return (

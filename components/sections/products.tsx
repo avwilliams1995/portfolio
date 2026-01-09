@@ -3,8 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import SectionHeader from "./section-header";
-import ProductCard from "./product-card";
+import SectionHeader from "../ui/section-header";
+import ProductCard from "../ui/product-card";
 import { productSkillsData } from "@/lib/data";
 
 export default function Products() {
