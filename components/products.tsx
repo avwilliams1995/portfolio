@@ -80,7 +80,7 @@ export default function Products() {
                 />
               </div>
               <ul className="flex flex-wrap justify-center gap-2 text-md text-gray-800 mt-5 w-[95%]">
-                {productSkillsData["Auda"].map((skill, index) => (
+                {productSkillsData["Audia"].map((skill, index) => (
                   <motion.li
                     className="bg-gray-200 borderBlack rounded-xl px-3 py-2  "
                     key={index}
