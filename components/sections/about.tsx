@@ -53,11 +53,11 @@ export default function About() {
         </p>
         <div className="h-2"></div>
         <p>
-          When I'm not coding, I enjoy attending sports events to watch my team
+          When I&apos;m not coding, I enjoy attending sports events to watch my team
           probably break my heart, listening/jamming out to music, playing
           piano, playing golf to hopefully break 90 (doubtful), boxing, fitness,
           tennis with friends, intramural softball, reading books, and coaching
-          baseball while being yelled at by 12 year old kids' parents.
+          baseball while being yelled at by 12 year old kids&apos; parents.
         </p>
       </motion.section>
     </div>
